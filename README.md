@@ -2,11 +2,11 @@
 
 ## 📌 Project Title
 
-**Dealership Website**
+**Car Dealership Website**
 
 ## 📄 Description
 
-This project was developed as part of the IT60012 Web Fundamentals course. It showcases our understanding of core web development concepts including HTML, CSS, and JavaScript. The objective was to build a functional, responsive, and interactive web application based on real-world use cases.
+This project was developed as part of the IT6012 Web Fundamentals course. It showcases our understanding of core web development concepts including HTML, CSS, and JavaScript. The objective was to build a functional, responsive, and interactive web application based on real-world use cases.
 
 ## 👥 Team Members
 
@@ -18,8 +18,7 @@ This project was developed as part of the IT60012 Web Fundamentals course. It sh
 
 - **HTML5** – Markup structure
 - **CSS3** – Styling and responsive layout
-- **JavaScript (ES6)** – Interactivity and DOM manipulation
-- [Add more if used: e.g., Bootstrap, Firebase, etc.]
+- **JavaScript** – Interactivity and DOM manipulation
 
 ## 🚀 Getting Started
 
