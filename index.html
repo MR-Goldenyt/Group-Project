@@ -23,10 +23,36 @@
         </ul>
     </nav>
 
-    <header class="hero">
-        <h1>Welcome to BH Motors</h1>
-        <p>Your gateway to premium vehicles in Bahrain.</p>
-    </header>
+    <!-- Hero slider like Genesis -->
+    <div class="hero-slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/car1.jpg" alt="Sedan" />
+                <div class="overlay">
+                    <h1>Sleek Sedan</h1>
+                    <p>Experience refined performance</p>
+                    <a href="sedan.html" class="btn">Explore Sedan</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/car2.jpg" alt="SUV" />
+                <div class="overlay">
+                    <h1>Luxury SUV</h1>
+                    <p>Power with elegance</p>
+                    <a href="suv.html" class="btn">Explore SUV</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/car3.jpg" alt="Coupe" />
+                <div class="overlay">
+                    <h1>Stylish Coupe</h1>
+                    <p>Drive with passion</p>
+                    <a href="coupe.html" class="btn">Explore Coupe</a>
+                </div>
+            </div>
+        </div>
+        <div class="dots"></div>
+    </div>
 
     <section class="overview">
         <h2>Website Overview</h2>
@@ -38,18 +64,56 @@
         </p>
     </section>
 
-    <section class="slideshow">
-        <h2>Featured Cars</h2>
-        <div class="carousel">
-            <a href="sedan.html"><img src="car1.jpg" alt="Sedan" /></a>
-            <a href="suv.html"><img src="car2.jpg" alt="SUV" /></a>
-            <a href="coupe.html"><img src="car3.jpg" alt="Coupe" /></a>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2025 BH Motors. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.hero-slider .slide');
+            const dotsContainer = document.querySelector('.hero-slider .dots');
+            let current = 0;
+
+            slides.forEach((_, idx) => {
+                const dot = document.createElement('span');
+                dot.addEventListener('click', () => {
+                    goToSlide(idx);
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = dotsContainer.querySelectorAll('span');
+
+            function goToSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((d, i) => {
+                    d.classList.toggle('active', i === index);
+                });
+                current = index;
+            }
+
+            function nextSlide() {
+                const next = (current + 1) % slides.length;
+                goToSlide(next);
+            }
+
+            // initialize
+            goToSlide(0);
+            // auto-advance every 5 seconds
+            setInterval(nextSlide, 5000);
+        });
+
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
