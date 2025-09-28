@@ -25,5 +25,5 @@ This project was developed as part of the IT60012 Web Fundamentals course. It sh
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-repo-url.git
-cd your-repo-folder
+git clone https://github.com/MR-Goldenyt/Group-Project.git
+cd Group-Project
