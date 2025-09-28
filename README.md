@@ -20,6 +20,11 @@ This project was developed as part of the IT6012 Web Fundamentals course. It sho
 - **CSS3** – Styling and responsive layout
 - **JavaScript** – Interactivity and DOM manipulation
 
+## ℹ️ Sources
+- **Sedan** – https://www.pexels.com/photo/luxury-black-sedan-in-urban-cityscape-32512194
+- **SUV** – https://4kwallpapers.com/cars/aston-martin-dbx707-16520.html
+- **Coupe** – https://4kwallpapers.com/cars/bmw-m850i-xdrive-coupe-edition-2020-1418.html
+
 ## 🚀 Getting Started
 
 ### 1. Clone the repository

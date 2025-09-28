@@ -45,6 +45,10 @@ nav .logo {
   color: white;
 }
 
+nav .logo a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 nav ul {
   list-style: none;
   display: flex;
