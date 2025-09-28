@@ -2,65 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sedan - BH Motors</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sedan - BH Motors</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><a href="index.html">BH Motors</a></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sedan.html">Sedan</a></li>
-            <li><a href="suv.html">SUV</a></li>
-            <li><a href="coupe.html">Coupe</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="making.html">Making of</a></li>
-            <li><a href="story.html">Our Story</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">BH Motors</a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sedan.html">Sedan</a></li>
+      <li><a href="suv.html">SUV</a></li>
+      <li><a href="coupe.html">Coupe</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="making.html">Making of</a></li>
+      <li><a href="story.html">Our Story</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero for Sedan -->
-    <div class="hero-slider">
-        <div class="slides">
-            <div class="slide active">
-                <img src="images/car1.jpg" alt="Sedan" />
-                <div class="overlay">
-                    <h1>Sleek Sedan</h1>
-                    <p>Luxury, comfort, and efficiency</p>
-                </div>
-            </div>
+  <!-- Hero slider for Sedan -->
+  <div class="hero-slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="images/car1.jpg" alt="Sedan" />
+        <div class="overlay">
+          <h1>Sleek Sedan</h1>
+          <p>Luxury, Comfort, and Efficiency</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Car Details Section -->
+  <section class="car-page">
+    <h2>Welcome <span id="userName"></span>!</h2>
+    <h3>Sedan</h3>
+    <p>The Sedan offers luxury, comfort, and efficiency. Perfect for city driving and long journeys.</p>
+
+    <!-- Specifications Boxes -->
+    <div class="specs">
+      <div class="spec-box">
+        <h4>Price</h4>
+        <p>$35,000</p>
+      </div>
+      <div class="spec-box">
+        <h4>Horsepower</h4>
+        <p>250 HP</p>
+      </div>
+      <div class="spec-box">
+        <h4>Torque</h4>
+        <p>320 Nm</p>
+      </div>
+      <div class="spec-box">
+        <h4>Top Speed</h4>
+        <p>240 km/h</p>
+      </div>
+      <div class="spec-box">
+        <h4>0-100 km/h</h4>
+        <p>6.5 sec</p>
+      </div>
+      <div class="spec-box">
+        <h4>Fuel Economy</h4>
+        <p>12 km/l</p>
+      </div>
+      <div class="spec-box">
+        <h4>Engine</h4>
+        <p>2.0L Turbo</p>
+      </div>
+      <div class="spec-box">
+        <h4>Transmission</h4>
+        <p>8-Speed Automatic</p>
+      </div>
+      <div class="spec-box">
+        <h4>Drive Train</h4>
+        <p>AWD</p>
+      </div>
+      <div class="spec-box">
+        <h4>Seating Capacity</h4>
+        <p>5 Seats</p>
+      </div>
+      <div class="spec-box">
+        <h4>Power Train</h4>
+        <p>Gasoline Turbocharged</p>
+      </div>
     </div>
 
-    <!-- Car details section -->
-    <section class="car-page">
-        <h2>Welcome <span id="userName"></span>!</h2>
-        <h3>Sedan</h3>
-        <p>The Sedan offers luxury, comfort, and efficiency. Perfect for city driving and long journeys.</p>
-    </section>
+    <!-- Test Drive Button -->
+    <div class="test-drive">
+      <a href="register.html" class="btn-test-drive">Book a Test Drive</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 BH Motors. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 BH Motors. All rights reserved.</p>
+  </footer>
 
-    <script>
-        // Display user's name
-        document.getElementById("userName").textContent = localStorage.getItem("user_name") || "Guest";
+  <script>
+    // Display user name
+    document.getElementById("userName").textContent = localStorage.getItem("user_name") || "Guest";
 
-        // Nav scroll effect
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
+    // Nav scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
