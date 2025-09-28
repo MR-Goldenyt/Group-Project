@@ -1,4 +1,4 @@
-# IT60012 - Web Fundamentals Group Project
+# IT6012 - Web Fundamentals Group Project
 
 ## 📌 Project Title
 
@@ -10,9 +10,9 @@ This project was developed as part of the IT60012 Web Fundamentals course. It sh
 
 ## 👥 Team Members
 
-- **Yosif Muhammad** – Roll No: 202404522 – GitHub: MR-Goldenyt
-- **Mohammed Usman** – Roll No: 202400319 – GitHub: [GitHub Username]
-- **Hasan Ramadhan** – Roll No: 202403270 – GitHub: Hasan-81
+- **Yosif Muhammad** – ID No: 202404522 – GitHub: MR-Goldenyt
+- **Mohammed Usman** – ID No: 202400319 – GitHub: MK545BH
+- **Hasan Ramadhan** – ID No: 202403270 – GitHub: Hasan-81
 
 ## 🛠️ Technologies Used
 
