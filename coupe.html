@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sedan - BH Motors</title>
+    <title>Coupe - BH Motors</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -23,15 +23,87 @@
         </ul>
     </nav>
 
+    <!-- Hero slider for Coupe -->
+    <div class="hero-slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/car3.jpg" alt="Coupe" />
+                <div class="overlay">
+                    <h1>Stylish Coupe</h1>
+                    <p>Passion, Style, and Excellence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="car-page">
         <h2>Welcome <span id="userName"></span>!</h2>
-        <h3>Coupe</h3>
-        <p>The Sedan offers luxury, comfort, and efficiency. Perfect for city driving and long journeys.</p>
-        <img src="images/car3.jpg" alt="Sedan" />
+        <h3 class="car-title">Coupe</h3>
+        <p class="car-description">The Coupe is designed for speed and style, perfect for drivers who value performance and aesthetics.</p>
+
+        <div class="specs">
+            <div class="spec-box">
+                <h4>Price</h4>
+                <p>$45,000</p>
+            </div>
+            <div class="spec-box">
+                <h4>Horsepower</h4>
+                <p>320 HP</p>
+            </div>
+            <div class="spec-box">
+                <h4>Torque</h4>
+                <p>350 Nm</p>
+            </div>
+            <div class="spec-box">
+                <h4>Top Speed</h4>
+                <p>260 km/h</p>
+            </div>
+            <div class="spec-box">
+                <h4>0-100 km/h</h4>
+                <p>5.8 sec</p>
+            </div>
+            <div class="spec-box">
+                <h4>Fuel Economy</h4>
+                <p>11 km/l</p>
+            </div>
+            <div class="spec-box">
+                <h4>Engine</h4>
+                <p>3.0L Turbocharged</p>
+            </div>
+            <div class="spec-box">
+                <h4>Transmission</h4>
+                <p>7-Speed Dual-Clutch</p>
+            </div>
+            <div class="spec-box">
+                <h4>Drive Train</h4>
+                <p>RWD</p>
+            </div>
+            <div class="spec-box">
+                <h4>Seating Capacity</h4>
+                <p>4 Seats</p>
+            </div>
+            <div class="spec-box">
+                <h4>Power Train</h4>
+                <p>Gasoline Turbocharged</p>
+            </div>
+        </div>
+
+        <div class="test-drive">
+            <a href="register.html" class="btn-test-drive">Book a Test Drive</a>
+        </div>
     </section>
+
+    <footer>
+        <p>&copy; 2025 BH Motors. All rights reserved.</p>
+    </footer>
 
     <script>
         document.getElementById("userName").textContent = localStorage.getItem("user_name") || "Guest";
+
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+        });
     </script>
 </body>
 

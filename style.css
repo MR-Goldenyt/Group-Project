@@ -46,9 +46,9 @@ nav .logo {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-nav .logo a:hover {
+/* nav .logo a:hover {
   color: rgba(0, 0, 0, 0.7);
-}
+} */
 
 nav ul {
   list-style: none;
@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #e90c9b;
 }
 
 /* push down sections so content doesn't hide under nav */
@@ -287,4 +287,16 @@ footer {
 .btn-test-drive:hover {
   background-color: #0056b3;
   transform: translateY(-3px);
+}
+
+.car-page .car-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5em 0;
+}
+
+.car-page .car-description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1.5em;
 }
