@@ -300,3 +300,142 @@ footer {
   color: #fff;
   margin-bottom: 1.5em;
 }
+
+/* making-of page */
+
+.making {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 1000px;
+  background-color: #191919;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 80px;
+  /* pushes below fixed nav */
+}
+
+.making h2 {
+  color: #007bff;
+  margin-bottom: 1em;
+}
+
+.making .making-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+/* our-story page */
+
+.story {
+  padding: 2.5em 2em;
+  margin: 1em auto;
+  max-width: 1000px;
+  background-color: #191919;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.story h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #007bff;
+  text-align: center;
+}
+
+.story-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1em;
+  color: #e0e0e0;
+}
+
+.story-text strong {
+  color: #007bff;
+}
+
+.img-loaded {
+  opacity: 0;
+  /* initially hidden */
+  transition: opacity 0.5s ease;
+  /* smooth fade-in */
+  backface-visibility: hidden;
+  /* helps prevent GPU flicker */
+  transform: translateZ(0);
+  /* triggers hardware acceleration */
+}
+
+.img-loaded.loaded {
+  opacity: 1;
+  /* fade in when fully loaded */
+}
+
+.register-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.register {
+  position: relative;
+  max-width: 700px;
+  width: 90%;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.register h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.register input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.register button {
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.register button:hover {
+  background: #444;
+  transform: translateY(-2px);
+}

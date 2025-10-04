@@ -10,19 +10,16 @@
 </head>
 
 <body>
-  <!-- Navigation -->
   <nav>
-    <div class="logo">
-      <a href="index.html">BH Motors</a>
-    </div>
+    <div class="logo"><a href="index.html">BH Motors</a></div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="sedan.html">Sedan</a></li>
       <li><a href="suv.html">SUV</a></li>
       <li><a href="coupe.html">Coupe</a></li>
-      <li><a href="register.html">Register</a></li>
       <li><a href="making.html">Making of</a></li>
       <li><a href="story.html">Our Story</a></li>
+      <li><a href="register.html">Register</a></li>
     </ul>
   </nav>
 
@@ -30,9 +27,9 @@
   <div class="hero-slider">
     <div class="slides">
       <div class="slide active">
-        <img src="images/car1.jpg" alt="Sedan" />
+        <img src="images/car1.jpg" alt="Sedan" class="img-loaded" onload="this.classList.add('loaded')" />
         <div class="overlay">
-          <h1>Sleek Sedan</h1>
+          <h1>Genesis</h1>
           <p>Luxury, Comfort, and Efficiency</p>
         </div>
       </div>
@@ -43,7 +40,9 @@
   <section class="car-page">
     <h2>Welcome <span id="userName"></span>!</h2>
     <h3 class="car-title">Genesis G80</h3>
-    <p class="car-description">With sleek styling and upscale detailing, the 2025 Genesis G80 certainly looks like the part of a posh mid-size luxury sedan. Open the driver's door and you're welcomed into a cabin that's rich and well-trimmed in high-end materials and tech.</p>
+    <p class="car-description">With sleek styling and upscale detailing, the 2025 Genesis G80 certainly looks like the part of a posh
+      mid-size luxury sedan. Open the driver's door and you're welcomed into a cabin that's rich and well-trimmed in high-end materials and
+      tech.</p>
 
     <!-- Specifications Boxes -->
     <div class="specs">
