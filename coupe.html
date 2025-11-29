@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coupe - BH Motors</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 
 <body>
@@ -22,6 +22,7 @@
             <li><a href="register.html">Register</a></li>
         </ul>
     </nav>
+
     <div class="page-content">
         <!-- Hero slider for Coupe -->
         <div class="hero-slider">
@@ -39,8 +40,11 @@
         <section class="car-page">
             <h2>Welcome <span id="userName"></span>!</h2>
             <h3 class="car-title">BMW M850i xDrive</h3>
-            <p class="car-description">Carrying on the legacy of its namesake from the 1990s, the newest BMW 8-series is a plush and powerful
-                grand tourer meant for high-speed Autobahn cruising in style.</p>
+            <p class="car-description">
+                Carrying on the legacy of its namesake from the 1990s, the newest BMW
+                8-series is a plush and powerful grand tourer meant for high-speed
+                Autobahn cruising in style.
+            </p>
 
             <div class="specs">
                 <div class="spec-box">
@@ -100,11 +104,13 @@
     </footer>
 
     <script>
-        document.getElementById("userName").textContent = localStorage.getItem("user_name") || "Guest";
+        document.getElementById("userName").textContent =
+            localStorage.getItem("user_name") || "Guest";
 
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+        const nav = document.querySelector("nav");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) nav.classList.add("scrolled");
+            else nav.classList.remove("scrolled");
         });
     </script>
 </body>
