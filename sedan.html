@@ -37,7 +37,6 @@
       </div>
     </div>
 
-    <!-- Car Details Section -->
     <section class="car-page">
       <h2>Welcome <span id="userName"></span>!</h2>
       <h3 class="car-title">Genesis G80</h3>
@@ -45,7 +44,6 @@
         mid-size luxury sedan. Open the driver's door and you're welcomed into a cabin that's rich and well-trimmed in high-end materials and
         tech.</p>
 
-      <!-- Specifications Boxes -->
       <div class="specs">
         <div class="spec-box">
           <h4>Price</h4>
@@ -93,7 +91,6 @@
         </div>
       </div>
 
-      <!-- Test Drive Button -->
       <div class="test-drive">
         <a href="register.html" class="btn-test-drive">Book a Test Drive</a>
       </div>
@@ -104,10 +101,8 @@
   </footer>
 
   <script>
-    // Display user name
     document.getElementById("userName").textContent = localStorage.getItem("user_name") || "Guest";
 
-    // Nav scroll effect
     const nav = document.querySelector('nav');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
